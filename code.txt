@@ -1,0 +1,243 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<mat-toolbar color="medium" class="mat-elevation-z6">
+  <strong class="title">
+    I-Constat
+  </strong>
+  <div class="spacer">
+    <a mat-button routerLink="/contrat" routerLinkActive="active">
+      <span class="material-icons">
+        library_add
+        </span> Contrat</a>
+    <a mat-button routerLink="/report" routerLinkActive="active"> <span class="material-icons">
+      view_list
+      </span>Liste des Contrats</a>
+    <a mat-button routerLink="/constat" routerLinkActive="active"> <span class="material-icons">
+      commute
+      </span> Constat</a>
+    <a mat-button  routerLink="/list" routerLinkActive="active">
+      <span class="material-icons">
+        dashboard
+        </span> Liste des Constats</a>
+    <a mat-raised-button color="primary" routerLink="/login" routerLinkActive="active"> Déconnexion</a>
+
+  </div>
+</mat-toolbar>
+
+<mat-card>
+
+<h1>constat amiable d'accident automobile</h1>
+<div class="row">
+    <div class="col-3 col-sm-3">
+        <label for="lieu"><h6>1.Date  de l'accident</h6></label>
+        <input id="lieu" required type="datetime" class="form-control" name="lieu" ngModel>
+
+    </div>
+    <div class="col-2 col-sm-2">
+      <label for="lieu"><h6> Heure de l'accident</h6></label>
+      <input id="lieu" required type="datetime" class="form-control" name="lieu" ngModel>
+
+  </div>
+    <div class="col-4 col-sm-4">
+        <label for="lieu"><h6>2.Lieu</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+    </div>
+    <div class="col-3 col-sm-3">
+        <label for="lieu"><h6>3.Blessés même légers </h6></label>
+        <!--<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>-->
+        <div>
+          <input type="radio" id="oui" name="oui" >
+          <label for="oui">OUI</label>
+        <span>           ou           </span>
+          <input type="radio" id="non" name="non">
+          <label for="non">NON</label>
+        </div>
+    </div>
+
+    <!-- Force next columns to break to new line at md breakpoint and up -->
+    <div class="w-100 d-none d-md-block"></div>
+
+    <div class="col-5 col-sm-5">
+        <label for="lieu"><h6>4.Dégâts materiels autres qu'aux véhicules A et B</h6></label>
+        <!--<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>-->
+        <div>
+          <input type="radio" id="oui" name="oui">
+          <label for="oui">OUI</label>
+        <span>           ou           </span>
+          <input type="radio" id="non" name="non">
+          <label for="non">NON</label>
+        </div>
+    </div>
+    <div class="col-7 col-sm-7">
+        <label for="lieu"><h6>5.Témoins</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+    </div>
+  </div>
+  <p>__________________________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+<div class="row">
+    <div  class="col-md" style="background-color:yellow;"><h2>VEHICULE A</h2>
+        <h4>6.Société d'Assurences</h4>
+        <label for="lieu"><h6>Véhicule assuré par: </h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Contrat d'Assurence N°:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Agence:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        Attestation valable du<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>au<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <h4>7.Identité du Conducteur</h4>
+        <label for="lieu"><h6>Nom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Prénom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Adresse:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Permis de conduire N°</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Délivré le:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <h4>8.Assuré</h4>
+        <label for="lieu"><h6>Nom: </h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Prénom: </h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Adresse:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Tél :</h6></label>
+        <input type="tel" name="tel" class="form-control" name="lieu" ngModel/>
+        <h4>9.Identité du Véhicule</h4>
+        <label for="lieu"><h6>Marque,Type:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>N° d'immatriculation:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Sens Suivi:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Venant de:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Allant à:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+    </div>
+    <div class="col-md"><h4>12. Circonstances</h4>
+        <p>Mettre une croix (X) dans chacune des cases utiles pour préciser le croquis </p>
+        <mat-selection-list #shoes>
+            <mat-list-option *ngFor="let shoe of typesOfShoes">
+              {{shoe}}
+            </mat-list-option>
+          </mat-selection-list>
+          <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br>
+          <div>
+            <label for="lieu"><h5>Indiquer le nombre des cases marquées d'une croix:</h5></label>
+            <div>
+              <label for="lieu"><h6>nombre des cases cochées par A</h6></label>
+              <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+              <label for="lieu"><h6>nombre des cases cochées par B</h6></label>
+              <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+            </div>
+          </div>
+    </div>
+    <div class="col-md"style="background-color:green;"><h2>VEHICULE B</h2>
+        <h4>6.Société d'Assurences</h4>
+        <label for="lieu"><h6>Véhicule assuré par:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Contrat d'Assurence N°:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Agence:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        Attestation valable du<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>au<input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <h4>7.Identité du Conducteur</h4>
+        <label for="lieu"><h6>Nom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Prénom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Adresse:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Permis de conduire N°:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Délivré le:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <h4>8.Assuré</h4>
+        <label for="lieu"><h6>Nom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Prénom:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Adresse:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Tél :</h6></label>
+        <input type="tel" name="tel" class="form-control" name="lieu" ngModel/>
+        <h4>9.Identité du Véhicule</h4>
+        <label for="lieu"><h6>Marque,Type: </h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>N° d'immatriculation</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Sens Suivi:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Venant de:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+        <label for="lieu"><h6>Allant à:</h6></label>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+    </div>
+
+</div>
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+<div >
+    <div class="row">
+      <div class="col"style="background-color:yellow;">
+        <h4>10.indiquer par une flèche le point de choc initial</h4>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        <h4>11.dégâts apparents</h4>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+      </div>
+      <div class="col">
+        <h4>13.croquis de l'accident</h4>
+      </div>
+      <div class="col"style="background-color:green;">
+        <h4>10.indiquer par une flèche le point de choc initial</h4>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        <h4>11.dégâts apparents</h4>
+        <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+      </div>
+    </div>
+    <div class="row">
+        <div class="col"style="background-color:yellow;">
+            <h4>14.Observations</h4>
+            <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+          </div>
+          <div class="col"style="background-color:green;">
+            <h4>14.Observations</h4>
+            <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+          </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col"style="background-color:yellow;">
+          <h4>15.Signature du conducteur A</h4>
+          <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        </div>
+        <div class="col"style="background-color:green;">
+          <h4>15.Signature du conducteur B</h4>
+          <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
+
+        </div>
+
+
+  </div>
+  </div>
+
+
+
+</mat-card>
+
+
+
+
+
+
