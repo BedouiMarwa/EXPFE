@@ -92,7 +92,7 @@
         <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
         <label for="lieu"><h6>Adresse:</h6></label>
         <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
-        <label for="lieu"><h6>Permis de conduire N°</h6></label>
+        <label for="lieu"><h6>Permis de conduire N°:</h6></label>
         <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
         <label for="lieu"><h6>Délivré le:</h6></label>
         <input id="lieu" required type="text" class="form-control" name="lieu" ngModel>
